@@ -1,6 +1,5 @@
-# LibraryEdp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+# Wizard Component 
+Created angular component by [Bruno Barroso](https://www.linkedin.com/in/brunorbarroso) based in frontend project of the [Pop Razvan](https://codepen.io/roppazvan/pen/axgoYR)
 
 ## Development server
 

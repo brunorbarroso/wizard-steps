@@ -1,0 +1,21 @@
+.line {
+  transition: all 200ms ease;
+  height: 2px;
+  flex-grow: 1;
+  background: var(--color-timeline-default);
+  left: 5px;
+  top: -10px;
+  position: relative;
+  &.completed {
+    background: var(--color-step-completed);
+  }
+  &.next-step-uncomplete {
+    background: linear-gradient(to right, var(--color-step-completed), var(--color-timeline-default));
+  }
+  &.next-step-in-progress {
+    background: linear-gradient(to right, var(--color-step-completed), var(--color-in-progress));
+  }
+  &.prev-step-in-progress {
+    background: linear-gradient(to right, var(--color-in-progress), var(--color-timeline-default));
+  }
+}

@@ -1,0 +1,8 @@
+<div class="main-container">
+    <div class="steps-container">
+      <div *ngFor="let item of steps; let stepIndex = index" class="wizard-item">
+        <app-wizard-item [label]="item.label" [step]="item.step" [icon]="item.icon" [iconStep]="item.iconStep" [stepClass]="item.stepClass" [line]="item">
+        </app-wizard-item>
+      </div>
+    </div>
+</div>
