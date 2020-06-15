@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-wizard',
+  selector: 'lib-wizard-steps',
   template: `
     <p>
-      wizard works!
+      wizard-steps works!
     </p>
   `,
   styles: []
 })
-export class WizardComponent implements OnInit {
+export class WizardStepsComponent implements OnInit {
 
   constructor() { }
 

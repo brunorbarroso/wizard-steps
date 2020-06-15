@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "wizard": [
-        "dist/wizard"
+      "wizard-steps": [
+        "dist/wizard-steps"
       ],
-      "wizard/*": [
-        "dist/wizard/*"
+      "wizard-steps/*": [
+        "dist/wizard-steps/*"
       ]
     }
   },

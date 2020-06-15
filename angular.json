@@ -159,6 +159,41 @@
           }
         }
       }
+    },
+    "wizard-steps": {
+      "projectType": "library",
+      "root": "projects/wizard-steps",
+      "sourceRoot": "projects/wizard-steps/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/wizard-steps/tsconfig.lib.json",
+            "project": "projects/wizard-steps/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/wizard-steps/src/test.ts",
+            "tsConfig": "projects/wizard-steps/tsconfig.spec.json",
+            "karmaConfig": "projects/wizard-steps/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/wizard-steps/tsconfig.lib.json",
+              "projects/wizard-steps/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "library-edp"
 }

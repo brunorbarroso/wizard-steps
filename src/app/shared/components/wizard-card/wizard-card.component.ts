@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { WizardModel, STEPS } from './wizard.model';
 
 @Component({
   selector: 'app-wizard-card',
@@ -17,13 +18,14 @@ export class WizardCardComponent implements OnInit {
   }
 
   composerSteps() {
-    const steps = [
+    const steps: WizardModel[] = [
       {
         label: 'Shopping',
         step: 'completed',
         icon: 'done',
         iconStep: 'fas fa-cart-arrow-down',
         stepClass: null,
+        isFirst: true,
         isFinishLine: false,
         isFinish: false,
         howIsStepInProgress: STEPS.COMPLETE
@@ -34,6 +36,7 @@ export class WizardCardComponent implements OnInit {
         icon: 'done',
         iconStep: 'far fa-credit-card',
         stepClass: null,
+        isFirst: false,
         isFinishLine: false,
         isFinish: false,
         howIsStepInProgress: STEPS.NEXT
@@ -44,6 +47,7 @@ export class WizardCardComponent implements OnInit {
         icon: 'preloader',
         iconStep: 'fas fa-dolly',
         stepClass: 'loading',
+        isFirst: false,
         isFinishLine: false,
         isFinish: false,
         howIsStepInProgress: STEPS.PREV
@@ -54,6 +58,7 @@ export class WizardCardComponent implements OnInit {
         icon: null,
         iconStep: 'fas fa-truck',
         stepClass: null,
+        isFirst: false,
         isFinishLine: true,
         isFinish: false,
         howIsStepInProgress: STEPS.EMPTY
@@ -73,12 +78,4 @@ export class WizardCardComponent implements OnInit {
 
     this.steps = steps;
   }
-
-}
-
-export enum STEPS {
-  EMPTY = 'nothing',
-  COMPLETE = 'completed',
-  NEXT = 'next',
-  PREV = 'prev'
 }

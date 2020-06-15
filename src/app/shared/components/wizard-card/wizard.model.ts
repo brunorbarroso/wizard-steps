@@ -1,11 +1,18 @@
 export class WizardModel {
-  label: any
-  step: any
-  icon: any
-  iconStep: any
-  stepClass: any
+  label?: string
+  step?: string
+  icon?: string
+  iconStep?: string
+  stepClass?: string
   isFirst: boolean
   isFinishLine: boolean
   isFinish: boolean
-  howIsStepInProgress: any
+  howIsStepInProgress?: string
+}
+
+export enum STEPS {
+  EMPTY = 'nothing',
+  COMPLETE = 'completed',
+  NEXT = 'next',
+  PREV = 'prev'
 }
