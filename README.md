@@ -1,6 +1,8 @@
 # Wizard Component 
 Created angular component by [Bruno Barroso](https://www.linkedin.com/in/brunorbarroso) based in frontend project of the [Pop Razvan](https://codepen.io/roppazvan/pen/axgoYR)
 
+![Example Wizard](example-wizard.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
